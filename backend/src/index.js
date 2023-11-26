@@ -5,22 +5,10 @@ const app = express();
 const port = process.env.SERVER_PORT || 8000;
 const data = require('./Data/jsonData.json')
 const data2 = require('./Data/jsonData2.json')
-// const multer = require("multer");
 const Schede = require("./component/mongoModels");
 const schema = require("./schema/mongoSchema");
 require("../mongoDBserver");
 
-// const storage = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, "./src/");
-//   },
-//   filename: (req, file, cb) => {
-//     let Suffix = "-" + Date.now;
-//     cb(null, file.fieldname + Suffix);
-//   },
-// });
-
-// const upload = multer({ storage: storage });
 app.use(cors());
 app.use(express.json());
 
