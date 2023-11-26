@@ -1,0 +1,26 @@
+{
+  "id_utente": "123",
+  "nome": "Mario",
+  "cognome": "Rossi",
+  "email": "mario.rossi@example.com",
+  "cicli_allenamento": [
+    {
+      "id_ciclo": "456",
+      "data_inizio": "2023-01-01",
+      "data_fine": "2023-01-28",
+      "settimane_allenamento": [
+        {
+          "id_settimana": "789",
+          "numero_settimana": 1,
+          "schede_allenamento": [
+            {
+              "id_scheda": "012",
+              "descrizione_scheda": "Allenamento 1",
+              "esercizi": ["corsa", "sollevamento pesi", "yoga"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
